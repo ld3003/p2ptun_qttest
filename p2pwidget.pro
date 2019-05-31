@@ -15,31 +15,27 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         widget.cpp \
-    p2ptest/JSON/cJSON.c \
-    p2ptest/KCP/ikcp.c \
-    p2ptest/msg2json.c \
-    p2ptest/p2ptun.c \
-    p2ptest/p2ptun_client.c \
-    p2ptest/p2ptun_common.c \
-    p2ptest/p2ptun_server.c
+    p2ptun/JSON/cJSON.c \
+    p2ptun/KCP/ikcp.c \
+    p2ptun/msg2json.c \
+    p2ptun/p2ptun.c \
+    p2ptun/p2ptun_client.c \
+    p2ptun/p2ptun_common.c \
+    p2ptun/p2ptun_server.c
 
 HEADERS  += widget.h \
-    p2ptest/JSON/cJSON.h \
-    p2ptest/KCP/ikcp.h \
-    p2ptest/linux_udp.h \
-    p2ptest/msg2json.h \
-    p2ptest/p2ptun.h \
-    p2ptest/p2ptun_client.h \
-    p2ptest/p2ptun_common.h \
-    p2ptest/p2ptun_server.h \
-    p2ptest/p2ptun_session_status.h \
+    p2ptun/JSON/cJSON.h \
+    p2ptun/KCP/ikcp.h \
+    p2ptun/linux_udp.h \
+    p2ptun/msg2json.h \
+    p2ptun/p2ptun.h \
+    p2ptun/p2ptun_client.h \
+    p2ptun/p2ptun_common.h \
+    p2ptun/p2ptun_server.h \
+    p2ptun/p2ptun_session_status.h \
     global.h
 
 FORMS    += widget.ui
 
-SUBDIRS += \
-    p2ptest/p2ptest.pro
 
-
-
-INCLUDEPATH += $$PWD/p2ptest/JSON/
+INCLUDEPATH += $$PWD/p2ptun/JSON/
