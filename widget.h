@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QtNetwork/QUdpSocket>
 //#include "global.h"
-#include "p2ptest/p2ptun.h"
+#include "p2ptun/p2ptun.h"
 #include <QTimer>
 #include <QDebug>
 namespace Ui {
